@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Person{
++ last_name : string
++ first_name : string
++ age : int
+}
+
+Person <|-- Student
+class Student {
++ faculty : string
++ group : string
+}
+
+Person <|-- Teacher
+class Teacher {
++ faculty : string
++ department : string
+}
+
+@enduml
